@@ -41,7 +41,6 @@ export default function App() {
       <div className="meadow-container">
         <div className="castle-container">
           {/*------Enemy elementleriniz aşağıda------*/}
-          
           {enemiesData.map((enemy,index)=>{
             return (
             <Enemy 
