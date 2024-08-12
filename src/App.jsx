@@ -41,6 +41,17 @@ export default function App() {
       <div className="meadow-container">
         <div className="castle-container">
           {/*------Enemy elementleriniz aşağıda------*/}
+          
+          {enemiesData.map((enemy,index)=>{
+            return (
+            <Enemy 
+            currentImage={enemy.currentImage}
+            position={enemy.position}
+            orientation={enemy.orientation}
+            />
+
+            )
+          })}
 
           {/*------Enemy elementleriniz yukarıda------*/}
         </div>
